@@ -1,0 +1,1 @@
+<h1> A Simple listing of animals with db in symfony</h1>
