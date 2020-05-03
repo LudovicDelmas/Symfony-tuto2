@@ -13,7 +13,7 @@ class AnimalFixtures extends Fixture
     {
         $c1 = new Famille();
         $c1->setLibelle("mammifères")
-            ->setDescription("Les Mammifères (Mammalia) sont une classe d'animaux vertébrés qui ont pour caractéristique principale que les représentants femelles (et parfois aussi les mâles) allaitent leurs juvéniles à partir d'une sécrétion cutanéo-glandulaire spécialisée appelée lait. Leur aire de répartition est planétaire, ils ont conquis une grande partie des niches écologiques de la macrofaune et demeurent un des taxons dominants depuis l'Éocène.");
+            ->setDescription("Les Mammifères (Mammalia) sont une classe d'animaux vertébrés qui ont pour caractéristique principale que les représentants femelles (et parfois aussi les mâles) allaitent leurs juvéniles à partir d'une sécrétion cutanéo-glandulaire spécialisée: le lait.");
         $manager->persist($c1);
 
         $c2 = new Famille();
