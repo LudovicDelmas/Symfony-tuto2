@@ -6,7 +6,7 @@
 
 {% block body %}
     {% for famille in familles %}
-        <h2 class="border-bottom boreder-primary" > {{ famille.libelle|capitalize }} </h2>
+        <h2 class="border-bottom boreder-primary" ><a href="{{path('afficher_famille', {'id':famille.id})}}"> {{ famille.libelle|capitalize }} </a></h2>
         <div> {{ famille.description }} </div>
         <div class="row">
             {% for animal in famille.animaux %}
@@ -19,7 +19,7 @@
                         <h2><a href="{{path('afficher_animal', {'id' : animal.id })}}">{{ animal.nom }}</a></h2>
                         <div>{{ animal.description }}</div>
                         <div class="align-items-center justify-content-end text-center">
-                            <a href="" class ="btn btn-primary">{{ animal.famille.libelle }}</a>
+                            <a href="{{path('afficher_famille', {'id':famille.id})}}" class ="btn btn-primary">{{ animal.famille.libelle }}</a>
                         </div>
                     </div>
                 </div>

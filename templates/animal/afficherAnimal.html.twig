@@ -18,6 +18,7 @@
                         <span class="badget badge-success"> Non </span>
                     {% endif %}
                 </div>
+                <a href="{{path('afficher_famille', {'id':animal.famille.id})}}" class ="btn btn-primary">{{ animal.famille.libelle }}</a>
             </div>
         </div>
 {% endblock %}

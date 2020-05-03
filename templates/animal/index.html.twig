@@ -14,7 +14,7 @@
                     <div>{{ animal.description }}</div>
                 </div>
                 <div class="flex text-center col-sm-2 col-12">
-                    <a href="" class ="btn btn-primary">{{ animal.famille.libelle }}</a>
+                    <a href="{{path('afficher_famille', {'id':animal.famille.id})}}" class ="btn btn-primary">{{ animal.famille.libelle }}</a>
                 </div>
             </div>
         </div>
